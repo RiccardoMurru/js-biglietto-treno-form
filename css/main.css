@@ -1,7 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Lato';
 }
-
 
 .show {
     opacity: 1;
@@ -9,4 +12,75 @@ body {
 
 .hidden {
     opacity: 0;
+}
+
+/* stile form */
+
+h1 {
+    text-align: center;
+}
+.dati-input .row{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #1db954;
+    border-radius: 10px 10px 0 0;
+
+
+}
+
+input,
+select {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.dati-input .row:nth-child(2) {
+    justify-content: space-around;
+    border-radius: 0 0 10px 10px;
+}
+
+.btn {
+    padding: 15px 25px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    filter: drop-shadow(0 0 2px #000);
+    outline: none;
+}
+
+/* stile dati biglietto */
+
+.style-biglietto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    background: #509bf5;
+    border-radius: 10px;;
+}
+
+.style-biglietto h2 {
+    margin: 0 0 15px;
+}
+
+table {
+    text-align: center;
+}
+
+th {
+    font-weight: 700;
+    padding: 10px 30px;
+}
+
+td:not(:last-child) {
+    border-right: 1px solid #222;
+    padding: 10px;
 }

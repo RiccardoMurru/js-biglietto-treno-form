@@ -59,7 +59,7 @@ bottoneGenera.addEventListener('click',
         document.getElementById('costo').innerHTML = costoBiglietto;
 
         // Mostra biglietto
-        container.className = 'show';
+        container.className = 'show style-biglietto';
     }   
 );
 
