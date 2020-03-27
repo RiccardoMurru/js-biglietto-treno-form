@@ -74,6 +74,13 @@ bottoneAnnulla.addEventListener('click',
         nome = document.getElementById('nome').value = '';
         kmDaPercorrere = document.getElementById('km').value = '';
         fasciaEta = document.getElementById('fascia-eta').value = 'minorenne';
+
+        // reset dati biglietto
+        document.getElementById('nome-passeggero').innerHTML = '';
+        document.getElementById('offerta-applicata').innerHTML = '';
+        document.getElementById('carrozza').innerHTML = '';
+        document.getElementById('codice-cp').innerHTML = '';
+        document.getElementById('costo').innerHTML = '';
     }
 );
 
