@@ -7,8 +7,7 @@
  */
 var container = document.getElementById('biglietto');
 var bottoneGenera = document.getElementById('bottoneGenera');
-
-
+var bottoneAnnulla = document.getElementById('bottoneAnnulla');
 
 /**
  * EVENTI
@@ -66,5 +65,16 @@ bottoneGenera.addEventListener('click',
 
 // Reset biglietto
 
+bottoneAnnulla.addEventListener('click',
+    function() {
+        // nasconde sezione costo del biglietto
+        container.className = 'hidden';
+
+        // reset form
+        nome = document.getElementById('nome').value = '';
+        kmDaPercorrere = document.getElementById('km').value = '';
+        fasciaEta = document.getElementById('fascia-eta').value = 'minorenne';
+    }
+);
 
 
